@@ -6,6 +6,7 @@ def map(source)
     result << yield(source[i])
     i += 1 
   end 
+  result
 end 
 
 def reduce(source, start = 0)
