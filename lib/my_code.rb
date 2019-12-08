@@ -7,3 +7,6 @@ def map(source)
     i += 1 
   end 
 end 
+
+def reduce(source, start = nil)
+  
