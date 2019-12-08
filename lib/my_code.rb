@@ -19,9 +19,6 @@ def reduce(source, start = nil)
   end 
   while i < source.length do
     result = yield(result, source[i])
-    if result = nil 
-      result = false 
-    end 
     i += 1 
   end 
   result
