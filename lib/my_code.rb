@@ -9,9 +9,14 @@ def map(source)
   result
 end 
 
-def reduce(source, start = 0)
-  result = start 
-  i = 0 
+def reduce(source, start = nil)
+  if start 
+    result = start 
+    i = 0 
+  else 
+    result = source[0]
+    i = 1 
+  end 
   while i < source.length do
     result = yield(source[i], result)
     i += 1 
