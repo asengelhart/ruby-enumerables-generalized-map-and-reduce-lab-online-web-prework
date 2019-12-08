@@ -8,5 +8,7 @@ def map(source)
   end 
 end 
 
-def reduce(source, start = nil)
+def reduce(source, start = 0)
+  result = start 
+  
   
